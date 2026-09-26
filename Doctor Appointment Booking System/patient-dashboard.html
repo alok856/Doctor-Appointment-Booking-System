@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Patient Dashboard | MediBook</title>
+  <meta name="description" content="Doctor Appointment Booking System frontend">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✚</span> MediBook</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="doctors.html">Find Doctors</a><a href="appointments.html">Appointments</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="book-appointment.html">Book Appointment</a>
+      </div>
+      <button class="btn btn-outline mobile-menu" data-demo="Mobile navigation demo">☰</button>
+    </div>
+  </nav>
+  <main class="dashboard">
+    <div class="container sidebar-layout">
+      <aside class="sidebar">
+        <div style="font-weight:900;color:#fff;padding:8px 12px 16px">MediBook</div>
+        <div class="side-title">Overview</div><a class="side-link active" href="patient-dashboard.html">⌂
+          Dashboard</a><a class="side-link" href="appointments.html">◷ Appointments</a>
+        <div class="side-title">Manage</div><a class="side-link" href="doctors.html">✚ Doctors</a><a class="side-link"
+          href="#">▣ Patients</a><a class="side-link" href="#">⚙ Settings</a>
+        <div class="side-title">Account</div><a class="side-link" href="login.html">↪ Logout</a>
+      </aside>
+      <section>
+        <div class="dash-head">
+          <div><span class="badge">Patient portal</span>
+            <h1>Good evening, Alok 👋</h1>
+            <p class="muted">Here’s your healthcare activity at a glance.</p>
+          </div><a class="btn btn-primary" href="book-appointment.html">+ New Appointment</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>03</strong><span>Upcoming</span></div>
+          <div class="stat"><strong>12</strong><span>Completed</span></div>
+          <div class="stat"><strong>01</strong><span>Pending</span></div>
+          <div class="stat"><strong>04</strong><span>Prescriptions</span></div>
+        </div>
+        <div class="grid grid-3" style="margin-top:24px">
+          <div class="card" style="grid-column:span 2">
+            <h2>Upcoming appointment</h2>
+            <div class="card" style="margin-top:16px;background:#f8fafc">
+              <div class="profile"><img class="avatar"
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=80">
+                <div><strong>Dr. Ananya Sharma</strong>
+                  <p class="muted">Cardiology</p>
+                  <p style="margin-top:5px">Tuesday, 29 September • 10:00 AM</p>
+                </div><span class="status confirmed">Confirmed</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Quick actions</h3><a class="btn btn-outline" style="width:100%;margin-top:14px" href="doctors.html">Find
+              Doctor</a><a class="btn btn-outline" style="width:100%;margin-top:10px" href="appointments.html">View
+              History</a>
+          </div>
+        </div>
+        <div class="card" style="margin-top:24px">
+          <h2>Recent appointments</h2>
+          <div class="table-wrap" style="margin-top:15px">
+            <table class="table">
+              <tr>
+                <th>Doctor</th>
+                <th>Specialty</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Dr. Priya Singh</td>
+                <td>General Physician</td>
+                <td>18 Sep 2026</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Dr. Rohan Verma</td>
+                <td>Dermatology</td>
+                <td>04 Sep 2026</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✚</span> <span style="color:white">MediBook</span></div>
+        <p style="margin-top:12px">A modern doctor appointment booking platform frontend built for the college project.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4><a href="doctors.html">Find Doctors</a><a href="book-appointment.html">Book Appointment</a><a
+          href="appointments.html">My Appointments</a>
+      </div>
+      <div>
+        <h4>Dashboard</h4><a href="patient-dashboard.html">Patient</a><a href="doctor-dashboard.html">Doctor</a><a
+          href="admin-dashboard.html">Admin</a>
+      </div>
+      <div>
+        <h4>Project</h4><a href="login.html">Login</a><a href="#">Privacy</a><a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>

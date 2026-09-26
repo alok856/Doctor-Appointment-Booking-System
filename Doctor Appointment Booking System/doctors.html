@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Find Doctors | MediBook</title>
+  <meta name="description" content="Doctor Appointment Booking System frontend">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✚</span> MediBook</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="doctors.html">Find Doctors</a><a href="appointments.html">Appointments</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="book-appointment.html">Book Appointment</a>
+      </div>
+      <button class="btn btn-outline mobile-menu" data-demo="Mobile navigation demo">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div><span class="badge">250+ verified doctors</span>
+            <h2>Find your doctor</h2>
+            <p>Browse doctors and choose a convenient appointment slot.</p>
+          </div>
+        </div>
+        <div class="searchbar"><input data-search placeholder="Search doctor, specialty or experience..."><select>
+            <option>All Specialties</option>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>General Physician</option>
+            <option>Orthopedics</option>
+          </select><button class="btn btn-primary" data-demo="Search applied">Search</button></div>
+        <div class="grid grid-3" style="margin-top:25px">
+          <article class="card doctor-card reveal" data-search-item><img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=80">
+            <div class="doctor-body"><span class="badge">Available today</span>
+              <h3 style="margin-top:10px">Dr. Ananya Sharma</h3>
+              <p class="muted">Cardiologist • 8 years experience</p>
+              <div class="doctor-meta"><span>₹600 consultation</span><span class="rating">★ 4.9</span></div><a
+                class="btn btn-primary" style="width:100%" href="doctor-details.html">View Profile</a>
+            </div>
+          </article>
+          <article class="card doctor-card reveal" data-search-item><img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=80">
+            <div class="doctor-body"><span class="badge">Next slot 10:30 AM</span>
+              <h3 style="margin-top:10px">Dr. Rohan Verma</h3>
+              <p class="muted">Dermatologist • 6 years experience</p>
+              <div class="doctor-meta"><span>₹450 consultation</span><span class="rating">★ 4.8</span></div><a
+                class="btn btn-primary" style="width:100%" href="doctor-details.html">View Profile</a>
+            </div>
+          </article>
+          <article class="card doctor-card reveal" data-search-item><img
+              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=700&q=80">
+            <div class="doctor-body"><span class="badge">Available tomorrow</span>
+              <h3 style="margin-top:10px">Dr. Priya Singh</h3>
+              <p class="muted">General Physician • 10 years experience</p>
+              <div class="doctor-meta"><span>₹350 consultation</span><span class="rating">★ 4.9</span></div><a
+                class="btn btn-primary" style="width:100%" href="doctor-details.html">View Profile</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✚</span> <span style="color:white">MediBook</span></div>
+        <p style="margin-top:12px">A modern doctor appointment booking platform frontend built for the college project.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4><a href="doctors.html">Find Doctors</a><a href="book-appointment.html">Book Appointment</a><a
+          href="appointments.html">My Appointments</a>
+      </div>
+      <div>
+        <h4>Dashboard</h4><a href="patient-dashboard.html">Patient</a><a href="doctor-dashboard.html">Doctor</a><a
+          href="admin-dashboard.html">Admin</a>
+      </div>
+      <div>
+        <h4>Project</h4><a href="login.html">Login</a><a href="#">Privacy</a><a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>

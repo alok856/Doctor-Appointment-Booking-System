@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login | MediBook</title>
+  <meta name="description" content="Doctor Appointment Booking System frontend">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✚</span> MediBook</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="doctors.html">Find Doctors</a><a href="appointments.html">Appointments</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="book-appointment.html">Book Appointment</a>
+      </div>
+      <button class="btn btn-outline mobile-menu" data-demo="Mobile navigation demo">☰</button>
+    </div>
+  </nav>
+
+  <main class="form-page">
+    <div class="form-card">
+      <div style="text-align:center"><span class="badge">Welcome back</span>
+        <h1 style="margin:12px 0 6px">Sign in to MediBook</h1>
+        <p class="muted">Use demo credentials or connect the form to your backend.</p>
+      </div>
+      <form data-form data-message="Login successful in demo mode!">
+        <div class="form-group" style="margin-top:24px"><label>Email</label><input type="email"
+            placeholder="you@example.com" required></div>
+        <div class="form-group"><label>Password</label><input type="password" placeholder="••••••••" required></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px"><label
+            style="font-size:13px"><input type="checkbox"> Remember me</label><a href="#" class="muted">Forgot
+            password?</a></div><button class="btn btn-primary" style="width:100%">Sign In</button>
+      </form>
+      <p style="text-align:center;margin-top:18px;color:var(--muted)">New patient? <a href="register.html"
+          style="color:var(--primary);font-weight:800">Create account</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✚</span> <span style="color:white">MediBook</span></div>
+        <p style="margin-top:12px">A modern doctor appointment booking platform frontend built for the college project.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4><a href="doctors.html">Find Doctors</a><a href="book-appointment.html">Book Appointment</a><a
+          href="appointments.html">My Appointments</a>
+      </div>
+      <div>
+        <h4>Dashboard</h4><a href="patient-dashboard.html">Patient</a><a href="doctor-dashboard.html">Doctor</a><a
+          href="admin-dashboard.html">Admin</a>
+      </div>
+      <div>
+        <h4>Project</h4><a href="login.html">Login</a><a href="#">Privacy</a><a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>

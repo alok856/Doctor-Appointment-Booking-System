@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Appointments | MediBook</title>
+  <meta name="description" content="Doctor Appointment Booking System frontend">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✚</span> MediBook</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="doctors.html">Find Doctors</a><a href="appointments.html">Appointments</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="book-appointment.html">Book Appointment</a>
+      </div>
+      <button class="btn btn-outline mobile-menu" data-demo="Mobile navigation demo">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div><span class="badge">Patient portal</span>
+            <h2>My appointments</h2>
+            <p>Track upcoming and previous appointments.</p>
+          </div><a class="btn btn-primary" href="book-appointment.html">+ Book New</a>
+        </div>
+        <div class="grid grid-3">
+          <div class="card"><span class="status confirmed">Upcoming</span>
+            <h3 style="margin-top:12px">Dr. Ananya Sharma</h3>
+            <p class="muted">Cardiology</p>
+            <p style="margin-top:12px">29 Sep 2026 • 10:00 AM</p><button class="btn btn-outline" style="margin-top:14px"
+              data-demo="Reschedule flow opened">Reschedule</button>
+          </div>
+          <div class="card"><span class="status pending">Pending</span>
+            <h3 style="margin-top:12px">Dr. Rohan Verma</h3>
+            <p class="muted">Dermatology</p>
+            <p style="margin-top:12px">02 Oct 2026 • 04:30 PM</p><button class="btn btn-outline" style="margin-top:14px"
+              data-demo="Cancellation confirmation opened">Cancel</button>
+          </div>
+          <div class="card"><span class="status completed">Completed</span>
+            <h3 style="margin-top:12px">Dr. Priya Singh</h3>
+            <p class="muted">General Physician</p>
+            <p style="margin-top:12px">18 Sep 2026 • 11:00 AM</p><button class="btn btn-outline" style="margin-top:14px"
+              data-demo="Receipt opened">View receipt</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✚</span> <span style="color:white">MediBook</span></div>
+        <p style="margin-top:12px">A modern doctor appointment booking platform frontend built for the college project.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4><a href="doctors.html">Find Doctors</a><a href="book-appointment.html">Book Appointment</a><a
+          href="appointments.html">My Appointments</a>
+      </div>
+      <div>
+        <h4>Dashboard</h4><a href="patient-dashboard.html">Patient</a><a href="doctor-dashboard.html">Doctor</a><a
+          href="admin-dashboard.html">Admin</a>
+      </div>
+      <div>
+        <h4>Project</h4><a href="login.html">Login</a><a href="#">Privacy</a><a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>

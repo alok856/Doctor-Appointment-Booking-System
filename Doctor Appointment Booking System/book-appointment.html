@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Appointment | MediBook</title>
+  <meta name="description" content="Doctor Appointment Booking System frontend">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">✚</span> MediBook</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="doctors.html">Find Doctors</a><a href="appointments.html">Appointments</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="book-appointment.html">Book Appointment</a>
+      </div>
+      <button class="btn btn-outline mobile-menu" data-demo="Mobile navigation demo">☰</button>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div><span class="badge">Secure booking</span>
+            <h2>Book an appointment</h2>
+            <p>Complete the details below. Backend/API integration can be added later.</p>
+          </div>
+        </div>
+        <div class="grid" style="grid-template-columns:1.4fr .7fr">
+          <form class="card" data-form data-message="Appointment booked successfully in demo mode!">
+            <div class="form-group"><label>Doctor</label><select>
+                <option>Dr. Ananya Sharma — Cardiologist</option>
+                <option>Dr. Rohan Verma — Dermatologist</option>
+              </select></div>
+            <div class="form-group"><label>Appointment date</label><input type="date"></div>
+            <div class="form-group"><label>Available slot</label>
+              <div class="slot-grid">
+                <div class="slot">09:30 AM</div>
+                <div class="slot selected">10:00 AM</div>
+                <div class="slot">10:30 AM</div>
+                <div class="slot">11:00 AM</div>
+              </div>
+            </div>
+            <div class="form-group"><label>Reason for visit</label><textarea rows="4"
+                placeholder="Briefly describe the reason..."></textarea></div>
+            <button class="btn btn-primary" style="width:100%">Confirm Appointment</button>
+          </form>
+          <div class="card">
+            <h3>Booking summary</h3>
+            <div style="margin-top:20px">
+              <p class="muted">Doctor</p><strong>Dr. Ananya Sharma</strong>
+              <p class="muted" style="margin-top:14px">Specialty</p><strong>Cardiology</strong>
+              <p class="muted" style="margin-top:14px">Consultation fee</p><strong>₹600</strong>
+              <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+              <p class="muted">No real payment is processed in this frontend demo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✚</span> <span style="color:white">MediBook</span></div>
+        <p style="margin-top:12px">A modern doctor appointment booking platform frontend built for the college project.
+        </p>
+      </div>
+      <div>
+        <h4>Platform</h4><a href="doctors.html">Find Doctors</a><a href="book-appointment.html">Book Appointment</a><a
+          href="appointments.html">My Appointments</a>
+      </div>
+      <div>
+        <h4>Dashboard</h4><a href="patient-dashboard.html">Patient</a><a href="doctor-dashboard.html">Doctor</a><a
+          href="admin-dashboard.html">Admin</a>
+      </div>
+      <div>
+        <h4>Project</h4><a href="login.html">Login</a><a href="#">Privacy</a><a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
